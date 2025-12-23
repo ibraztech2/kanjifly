@@ -40,8 +40,8 @@ with st.form(key='input_form'):
     potassium = st.number_input("Potassium Level (0-100)", 0.0, 100.0, step=0.1)
     temperature = st.number_input("Temperature (°C)", 0.0, 100.0, step=0.1)
     humidity = st.number_input("Humidity (%)", 0.0, 100.0, step=0.1)
-    rainfall = st.number_input("Rainfall (mm)", 0.0, 100.0, step=0.1)
-    ph = st.slider("PH Level", 0.0, 14.0, step=0.1)
+    rainfall = st.number_input("Rainfall (mm)", 0.0, 500.0, step=0.1)
+    ph = st.slider("PH Level", 0.0, 14.0, step=0.01)
 
     submit_button = st.form_submit_button("Predict")
 
