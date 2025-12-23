@@ -11,7 +11,7 @@ def load_model():
     return joblib.load("dtc.pkl")
 
 def run_check(nitrogen, phosphorous, potassium, temperature, humidity, ph, rainfall):
-    model = load_model
+    model = load_model()
     columns = [ 'N', 'P', 'K', 'temperature', 'humidity', 'ph', 'rainfall' ]
     data = np.array([[
         nitrogen,
