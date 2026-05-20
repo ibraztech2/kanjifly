@@ -25,7 +25,7 @@ A Streamlit-based crop recommendation app that predicts the best crop to plant f
 
 ## Requirements
 
-- Python 3.9+ recommended
+- Python 3.9+ required
 
 Install dependencies:
 
@@ -33,6 +33,8 @@ Install dependencies:
 pip install -r requirements.txt
 pip install streamlit pandas
 ```
+
+> Note: `streamlit` and `pandas` are used by `app.py` but are not currently listed in `requirements.txt`, so they are installed explicitly above.
 
 ## Run the App
 
