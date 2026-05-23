@@ -1,65 +1,95 @@
-# 🌱 Crop Recommendation System (Streamlit + ML)
 
-A simple machine learning web application that recommends the best crop to plant based on soil and environmental conditions. Built using **Streamlit** and a trained **Decision Tree Classifier (dtc.pkl)**.
 
----
+# 🌱 Smart Agriculture AI System
 
-## 🚀 Features
+An AI-powered agricultural assistant that combines:
 
-- 🌾 Predicts the most suitable crop based on input conditions  
-- 📊 Uses trained ML model (Decision Tree Classifier)  
-- 🧪 Takes soil nutrients and climate data as input:
-  - Nitrogen (N)
-  - Phosphorus (P)
-  - Potassium (K)
-  - Temperature
-  - Humidity
-  - pH level
-  - Rainfall
-- ⚡ Real-time prediction using Streamlit UI  
-- 🖥️ Simple and interactive web interface  
+- 🌾 Crop Recommendation System  
+- 🩺 Plant Disease Diagnosis System  
+
+This project helps farmers and agricultural researchers make intelligent farming decisions using Machine Learning and Computer Vision.
 
 ---
 
-## 🧠 How It Works
+# 🚀 Features
 
-1. User enters soil and environmental parameters  
-2. Data is passed into a trained ML model  
-3. Model predicts the most suitable crop  
-4. Result is displayed instantly on the UI  
+## 🌾 Crop Recommendation
+Predicts the most suitable crop based on:
+
+- Nitrogen (N)
+- Phosphorous (P)
+- Potassium (K)
+- Temperature
+- Humidity
+- Soil pH
+- Rainfall
 
 ---
 
-## 📂 Project Structure
-<img width="1222" height="457" alt="image" src="https://github.com/user-attachments/assets/126beb42-4887-4739-a345-860201b2b4fc" />
+## 🩺 Plant Disease Diagnosis
+Detects plant diseases from uploaded leaf images using a YOLOv8 classification model.
+
+Supported classes:
+
+- Pepper Bell Bacterial Spot  
+- Pepper Bell Healthy  
+- Potato Early Blight  
+- Potato Late Blight  
+- Potato Healthy  
+- Tomato Bacterial Spot  
+- Tomato Early Blight  
+- Tomato Healthy  
+
+---
+
+# 🧠 Technologies Used
+
+- Python  
+- Streamlit  
+- YOLOv8  
+- PyTorch  
+- Scikit-learn  
+- Pandas  
+- NumPy  
+- Pillow  
+
+---
+
+# 📁 Project Structure
+
+project/
+│
+├── app.py
+├── dtc.pkl
+├── requirements.txt
+├── runs/
+└── assets/
 
 
 ---
 
 ## ⚙️ Installation
 
-### 1. Clone the repository
+### 1. Clone the Repo
+
 ```bash
-git clone https://github.com/your-username/kanjifly.git
+git clone https://github.com/ibraztech2/kanjifly.git
 cd kanjifly
+```
+
+2. Install Dependencies
+
 pip install -r requirements.txt
+
+## ▶️ Run the Application
+``` bash
 streamlit run app.py
-http://localhost:8501
-
-| Feature     | Description              | Range |
-| ----------- | ------------------------ | ----- |
-| N           | Nitrogen content in soil | 0–100 |
-| P           | Phosphorus content       | 0–100 |
-| K           | Potassium content        | 0–100 |
-| Temperature | Air temperature (°C)     | 0–100 |
-| Humidity    | Relative humidity (%)    | 0–100 |
-| pH          | Soil acidity/alkalinity  | 0–14  |
-| Rainfall    | Rainfall (mm)            | 0–500 |
+```
 
 
-Recommended Crop: Rice 🌾
+### 🌾 Crop Recommendation Workflow
+User enters soil and weather parameters ML model processes input System predicts best crop 🩺 Disease Diagnosis Workflow User uploads plant leaf image YOLOv8 model analyzes image Disease class is predicted Confidence score is displayed 
 
-👨‍💻 Author
+👨‍💻 Author: `Ibrahim Mustapha`
 
-Ibrahim Mustapha
-AI / Computer Vision & Machine Learning Enthusiast 
+Interests: Computer Vision Deep Learning Smart Agriculture Embedded Systems AI for Social Good
